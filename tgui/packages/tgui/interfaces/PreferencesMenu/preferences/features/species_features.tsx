@@ -60,3 +60,8 @@ export const underwear_color: Feature<string> = {
   name: "Underwear color",
   component: FeatureColorInput,
 };
+
+export const feature_pod_hair: Feature<string> = {
+  name: "Pod hair",
+  component: FeatureDropdownInput,
+};

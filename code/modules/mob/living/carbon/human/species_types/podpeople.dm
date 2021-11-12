@@ -9,6 +9,7 @@
 		TRAIT_CAN_STRIP,
 		TRAIT_PLANT_SAFE,
 	)
+	external_organs = list(/obj/item/organ/external/snout = "Round")
 	inherent_biotypes = MOB_ORGANIC | MOB_HUMANOID | MOB_PLANT
 	inherent_factions = list("plants", "vines")
 	attack_verb = "slash"

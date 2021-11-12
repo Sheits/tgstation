@@ -2223,3 +2223,14 @@
 /datum/sprite_accessory/moth_markings/witchwing
 	name = "Witch Wing"
 	icon_state = "witchwing"
+
+////////////////////////////////
+// Podperson Hair Definitions //
+////////////////////////////////
+
+/datum/sprite_accessory/pod_hair
+	icon = 'icons/mob/human_face.dmi'
+
+/datum/sprite_accessory/pod_hair/test
+	name = "testing hairstyle"
+	icon_state = "podperson_test"
