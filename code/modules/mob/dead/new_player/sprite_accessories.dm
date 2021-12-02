@@ -2231,6 +2231,10 @@
 /datum/sprite_accessory/pod_hair
 	icon = 'icons/mob/human_face.dmi'
 
+/datum/sprite_accessory/pod_hair/none
+	name = "None"
+	icon_state = "none"
+
 /datum/sprite_accessory/pod_hair/test
-	name = "testing hairstyle"
+	name = "Test"
 	icon_state = "podperson_test"

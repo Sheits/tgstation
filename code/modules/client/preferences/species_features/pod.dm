@@ -16,12 +16,12 @@
 		var/icon/final_icon = icon(pod)
 
 		if (sprite_accessory.icon_state != "none")
-			var/icon/accessory_icon = icon(sprite_accessory.icon, "m_[key]_[sprite_accessory.icon_state]_ADJ", EAST)
+			var/icon/accessory_icon = icon(sprite_accessory.icon, "pod_hair_[sprite_accessory.icon_state]", EAST)
 			final_icon.Blend(accessory_icon, ICON_OVERLAY)
 
 		final_icon.Crop(11, 20, 23, 32)
 		final_icon.Scale(32, 32)
-		final_icon.Blend(COLOR_DARK_MODERATE_LIME_GREEN, ICON_MULTIPLY)
+		final_icon.Blend(COLOR_VIBRANT_LIME, ICON_MULTIPLY)
 
 		values[name] = final_icon
 
@@ -35,7 +35,7 @@
 	should_generate_icons = TRUE
 
 /datum/preference/choiced/pod_hair/init_possible_values()
-	return generate_pod_side_shots(GLOB.pod_hair, "pod_hair")
+	return generate_pod_side_shots(GLOB.pod_hair_list, "pod_hair")
 
 /datum/preference/choiced/pod_hair/apply_to_human(mob/living/carbon/human/target, value)
 	target.dna.features["pod_hair"] = value
