@@ -3,14 +3,16 @@
 	name = "Podperson"
 	id = SPECIES_PODPERSON
 	default_color = "59CE00"
-	species_traits = list(MUTCOLORS,EYECOLOR, HAS_FLESH, HAS_BONE)
+	species_traits = list(MUTCOLORS, EYECOLOR, HAS_FLESH, HAS_BONE)
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CAN_STRIP,
 		TRAIT_PLANT_SAFE,
 	)
-	external_organs = list(/obj/item/organ/external/snout = "Round",
-		/obj/item/organ/external/pod_hair = "None")
+	external_organs = list(
+		/obj/item/organ/external/snout = "Round",
+		/obj/item/organ/external/pod_hair = "None",
+		)
 	inherent_biotypes = MOB_ORGANIC | MOB_HUMANOID | MOB_PLANT
 	inherent_factions = list("plants", "vines")
 	attack_verb = "slash"

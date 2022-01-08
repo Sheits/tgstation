@@ -99,8 +99,7 @@
 		"moth_antennae" = pick(GLOB.moth_antennae_list),
 		"moth_markings" = pick(GLOB.moth_markings_list),
 		"tail_monkey" = "None",
-		"pod_hair" = pick(GLOB.pod_hair_list)
-		))
+		"pod_hair" = pick(GLOB.pod_hair_list),))
 
 /proc/random_hairstyle(gender)
 	switch(gender)
@@ -462,7 +461,7 @@ GLOBAL_LIST_EMPTY(species_list)
 /proc/ishumanbasic(target)
 	if (!ishuman(target))
 		return FALSE
-	
+
 	var/mob/living/carbon/human/human_target = target
 	return human_target.dna?.species?.type == /datum/species/human
 

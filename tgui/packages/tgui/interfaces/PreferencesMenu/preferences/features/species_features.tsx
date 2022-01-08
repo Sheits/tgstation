@@ -71,10 +71,6 @@ export const underwear_color: Feature<string> = {
   component: FeatureColorInput,
 };
 
-export const feature_pod_hair: FeatureChoiced = {
-  name: "Pod hair",
-};
-
 export const feature_vampire_status: Feature<string> = {
   name: "Vampire status",
   component: FeatureDropdownInput,
